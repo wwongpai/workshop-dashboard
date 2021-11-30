@@ -219,7 +219,7 @@
         "created": 0,
         "creator": null,
         "customProperties": {},
-        "description": "How many CloudWatch calls is SignalFx making in total for each of my AWS accounts?",
+        "description": "How many CloudWatch calls is Splunk making in total for each of my AWS accounts?",
         "id": "FFV77k_A4AI",
         "lastUpdated": 0,
         "lastUpdatedBy": null,
@@ -296,7 +296,7 @@
           "unitPrefix": "Metric"
         },
         "packageSpecifications": "",
-        "programText": "A = data('sf.org.num.awsServiceCallCount', filter=filter('namespace', 'AWS/CloudWatch'),rollup='rate').publish(label='A')",
+        "programText": "A = data('sf.org.num.awsServiceCallCount', filter=filter('namespace', 'AWS/CloudWatch'), rollup='rate').publish(label='A')",
         "relatedDetectorIds": [],
         "tags": null
       }
@@ -2403,7 +2403,7 @@
       "teams": null
     }
   },
-  "hashCode": 303982905,
+  "hashCode": -301974855,
   "id": "FFV7wUbA4AA",
   "modelVersion": 1,
   "packageType": "GROUP"
